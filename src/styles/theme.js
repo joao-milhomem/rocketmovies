@@ -11,5 +11,7 @@ export default {
     TEXT_2:'#CAC4CF',
     TEXT_3:'#948F99',  
     TEXT_4:'#999591',
+
+    BORDER:'#3E3B47',
   }
 }
