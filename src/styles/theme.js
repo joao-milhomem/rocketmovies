@@ -5,7 +5,8 @@ export default {
     BACKGROUND_3:'#0D0C0F',
 
     ACCENT: '#FF859B',
-    SUPPORT: '#312E38', 
+    SUPPORT: '#ff859b0d', 
+    TAG:'#312E38',
 
     TEXT_1:'#F4EDE8',
     TEXT_2:'#CAC4CF',

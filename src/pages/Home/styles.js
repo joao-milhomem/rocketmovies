@@ -9,4 +9,29 @@ export const Container = styled.div`
   grid-template-areas: 
   "header"
   "content";
+
 `
+export const Content = styled.div`
+  >main{
+    padding: 50px 123px;
+
+    
+  .card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom:40px;
+
+    >h2{
+      
+    }
+
+    button {
+      max-width: 207px;
+    }
+  }
+
+  }
+`
+export const Cards = styled.div``
