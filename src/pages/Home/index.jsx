@@ -1,4 +1,4 @@
-import { Container , Content, Cards} from "./styles";
+import { Container, Add , Content} from "./styles";
 
 import {FiPlus} from 'react-icons/fi'
 
@@ -13,41 +13,87 @@ export function Home() {
     <Container>
       <Header/>
 
+      <Add>
+          <h2>Meus filmes</h2>
+          <Button title='Adicionar filme' icon={FiPlus}/>
+      </Add>
+
       <Content>
+        
         <main>
-          
-          <div className="card-header">
-            <h2>Meus filmes</h2>
-            <Button title='Adicionar filme' icon={FiPlus}/>
-          </div>
+          <Card>
+            <h3>Interestellar</h3>
+            <Rate/>
+            <p>As reservas naturais da Terra estão chegando ao fim e um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, possibilitando a continuação da espécie. Cooper é chamado para lkeyerar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos. Ao lado de Brand, Jenkins e Doyle, ele seguirá em busca de um novo lar.
+            </p>
 
-          <Cards>
-
-            <Card>
-              <h3>Interestellar</h3>
-              <Rate/>
-              <p>As reservas naturais da Terra estão chegando ao fim e um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, possibilitando a continuação da espécie. Cooper é chamado para liderar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos. Ao lado de Brand, Jenkins e Doyle, ele seguirá em busca de um novo lar.
-              </p>
-
-            <Tag data= {[
+            <Tag  props={[
               {
-                id: '1',
+                key: '1',
                 genre:'Ficção cientifica'
               }, 
 
               {
-                id: '2',
+                key: '2',
                 genre:'Família'
               },
               {
-                id: '3',
+                key: '3',
+                genre:'Drama'
+              }
+            ]}/>
+                
+          </Card>
+              
+          <Card>
+            <h3>Interestellar</h3>
+            <Rate/>
+            <p>As reservas naturais da Terra estão chegando ao fim e um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, possibilitando a continuação da espécie. Cooper é chamado para lkeyerar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos. Ao lado de Brand, Jenkins e Doyle, ele seguirá em busca de um novo lar.
+            </p>
+
+            <Tag props= {[
+              {
+                key: '1',
+                genre:'Ficção cientifica'
+              }, 
+
+              {
+                key: '2',
+                genre:'Família'
+              },
+              {
+                key: '3',
                 genre:'Drama'
               }
             ]}/>
               
-            </Card>
-          </Cards>
+          </Card>
+
+          <Card>
+            <h3>Interestellar</h3>
+            <Rate/>
+            <p>As reservas naturais da Terra estão chegando ao fim e um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, possibilitando a continuação da espécie. Cooper é chamado para lkeyerar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos. Ao lado de Brand, Jenkins e Doyle, ele seguirá em busca de um novo lar.
+            </p>
+
+            <Tag props= {[
+              {
+                key: '1',
+                genre:'Ficção cientifica'
+              }, 
+
+              {
+                key: '2',
+                genre:'Família'
+              },
+              {
+                key: '3',
+                genre:'Drama'
+              }
+            ]}/>
+            
+          </Card>
         </main>
+      
       </Content>
     </Container>
   )

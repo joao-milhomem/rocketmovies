@@ -1,9 +1,9 @@
 import { Container } from "./styles";
 
-export function Tag({data}) {
+export function Tag({props}) {
   return(
     <Container>
-      {data && data.map(data => <span data = {data.id}> {data.genre} </span>)}
+      {props && props.map(props => <span key= {props.key}> {props.genre} </span>)}
     </Container>
   )
 }

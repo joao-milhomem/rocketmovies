@@ -1,11 +1,12 @@
 import { Container,Avatar } from "./styles";
 import {Input} from '../Input'
+import {FiSearch} from 'react-icons/fi'
 export function Header() {
   return(
     <Container>
       <h1>RocketMovies</h1>
 
-      <Input placeholder = 'Pesquisar pelo título' />
+      <Input placeholder = 'Pesquisar pelo título' icon={FiSearch}/>
 
       <Avatar>
         <div className="text-wrapper">

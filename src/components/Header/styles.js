@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
-  width: 100%;
-  height: 116px;
   grid-area: header;
-  
-  border-bottom: 1px solid ${({theme})=> theme.COLORS.BORDER};
-
   display: flex;
+  padding: 24px 123px;
   align-items: center;
   gap: 64px;
-  padding: 24px 124px;
+  
+  width: 100%;
+  height: 116px;
+  
+  border-bottom: 1px solid ${({theme})=> theme.COLORS.BORDER};
 
   h1{
     font-size: 24px;

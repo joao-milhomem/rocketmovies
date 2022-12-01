@@ -5,33 +5,38 @@ export const Container = styled.div`
   height: 100vh;
 
   display: grid;
-  grid-template-rows:116px auto ;
+  grid-template-rows:116px auto auto ;
   grid-template-areas: 
   "header"
+  "add"
   "content";
-
 `
+
+export const Add = styled.div` 
+  grid-area: add;
+
+  display: flex;
+  justify-content:space-between ;
+  align-items: center;
+  padding-inline: 106px;
+  margin-top: 50px;
+
+  h2{
+    font-size: 32px;
+  }
+
+  button {
+    max-width: 207px;
+  }
+`
+
 export const Content = styled.div`
-  >main{
-    padding: 50px 123px;
+    grid-area: content;
+    overflow-y: auto;
 
+    margin-top: 40px;
     
-  .card-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    margin-bottom:40px;
-
-    >h2{
-      
+    main{
+      padding: 0 122px;
     }
-
-    button {
-      max-width: 207px;
-    }
-  }
-
-  }
 `
-export const Cards = styled.div``
