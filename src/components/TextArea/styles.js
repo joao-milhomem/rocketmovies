@@ -5,7 +5,7 @@ width: 100%;
 height: 274px;
 resize: none;
 
-padding: 12px;
+padding: 16px;
 
 background-color:${({theme}) => theme.COLORS.BACKGROUND_1};
 color: ${({theme}) => theme.COLORS.TEXT_1};
