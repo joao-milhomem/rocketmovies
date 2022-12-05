@@ -1,20 +1,16 @@
-import { Container,Content, Back, Form , Bookmarks} from "./styles";
+import { Container,Content, Form , Bookmarks} from "./styles";
 import {Header} from '../../components/Header'
-import { FiArrowLeft } from "react-icons/fi";
 import { Input } from "../../components/Input";
 import { TextArea } from "../../components/TextArea";
 import {Button} from '../../components/Button'
+import { Bookmark } from "../../components/Bookmark";
+import { Back } from "../../components/Back";
 export function New (){
   return(
     <Container>
       <Header/>
 
-      <Back>
-        <a href="">
-          <FiArrowLeft/>
-          Voltar
-        </a> 
-      </Back>
+      <Back/>
 
       <Content>
         <Form>
@@ -27,10 +23,10 @@ export function New (){
 
           <TextArea placeholder = 'Observações'/>
           
+          <p>Marcadores</p>
           <Bookmarks>
-            <p>Marcadores</p>
-
-            
+            <Bookmark placeholder = 'Novo marcador' value = 'NodeJS' />
+            <Bookmark placeholder = 'Novo marcador' isNew/>            
           </Bookmarks>
 
           <div className="group-flex">

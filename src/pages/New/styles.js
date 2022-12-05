@@ -5,23 +5,11 @@ export const Container = styled.div`
   height: 100vh;
 
   display: grid;
-  grid-template-rows: 116px 20px auto;
+  grid-template-rows: 116px auto auto;
   grid-template-areas: 
     "header"
     "back"
     "content";
-`
-export const Back = styled.div`
-  grid-area: back;
-  padding-inline: 110px;
-
-  a{
-      display: flex;
-      align-items: center;
-      gap: 8px;
-
-      color: ${({theme}) => theme.COLORS.ACCENT};
-    }
 `
 export const Content = styled.main`
   grid-area: content;
@@ -29,17 +17,42 @@ export const Content = styled.main`
   width: 100%;
 `
 export const Form = styled.form`
-    padding-inline: 110px;
+  padding-inline: 110px;
+
+  h2{
+    margin-bottom:40px;
+  }
+    
   .group-flex {
     display: flex;
     justify-content: space-between;
     gap: 40px;
+
+    margin-bottom: 40px;
 
     button:nth-last-child(2){
       background-color:${({theme}) => theme.COLORS.BACKGROUND_3} ;
       color: ${({theme}) => theme.COLORS.ACCENT};
     }
   }
+
+  textarea{
+    margin-bottom: 40px;
+  }
+
+  p{
+    margin-bottom:24px ;
+  }
 `
 export const Bookmarks = styled.div`
+  width: 100%;
+  padding: 16px;
+
+  border-radius: 10px;
+  background-color: ${({theme}) => theme.COLORS.BACKGROUND_3};
+
+  display: flex;
+  gap: 24px;
+
+  margin-bottom: 40px;
 `
