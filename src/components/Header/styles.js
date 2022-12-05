@@ -33,7 +33,7 @@ export const Avatar = styled.div`
       font-weight: bold;
     }
 
-    a{
+    a:nth-child(2){
       font-size: 14px;
       color: ${({theme})=> theme.COLORS.TEXT_3};
     }

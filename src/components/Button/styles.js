@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const Container = styled.button`
-  width: 100%;
+export const Container = styled(Link)`
   height: 56px;
+  padding: 16px 32px;
 
   display: flex;
   align-items: center;

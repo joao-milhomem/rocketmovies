@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled(Link)`
+  display: block;
   width: 100%;
   margin-bottom: 24px;
   padding: 32px;

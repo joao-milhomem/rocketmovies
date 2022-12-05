@@ -1,13 +1,14 @@
 import { Container } from "./styles";
 import {FiArrowLeft} from 'react-icons/fi'
+import { Link } from "react-router-dom";
 export function Back() {
   return(
     <Container>
 
-      <a href="">
+      <Link to= '/'>
         <FiArrowLeft/>
         <span>Voltar</span>
-      </a>
+      </Link>
       
     </Container>
   )
